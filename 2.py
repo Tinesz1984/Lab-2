@@ -1,4 +1,4 @@
-# #Реализовать поиск по авторам, выдавать результат С 2016 по 2018 год. Выдача до - 11
+# #Реализовать поиск по авторам, выдавать результат С 2016 по 2018 год. 
 from csv import reader 
 
 def search(table, search_line): 
@@ -26,3 +26,4 @@ while True:
             search(table, search_line)
     except FileNotFoundError:
         print('Файл не найден')
+
