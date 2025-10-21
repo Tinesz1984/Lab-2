@@ -1,8 +1,8 @@
-#Теги - 13 стоб таблицы, 12 нужен нам
 from csv import reader 
 
 def search(table): 
     list = []
+    headers = next(table)
     for row in table:
         stroke = row[12].replace('# ', '#').split('#')
         for el in stroke: 
@@ -17,4 +17,5 @@ def search(table):
 
 with open('books.csv', 'r') as csvfile: 
     table = reader(csvfile, delimiter=';') 
+
     search(table)
